@@ -39,6 +39,69 @@ FastQC: Generates quality reports for raw reads.
 
 MultiQC: Aggregates QC reports.
 
+### QC is performed based on the criteria listed in the table below.
+
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr>
+      <th colspan="2" style="background-color: #F8CECC;">Sequencing Read Quality</th>
+      <th colspan="2" style="background-color: #D5E8D4;">Conamination and Duplicate reads</th>
+      <th colspan="2" style="background-color: #DAE8FC;">Alignment Quality</th>
+    </tr>
+    <tr>
+      <th style="background-color: #F8CECC;">Category</th>
+      <th style="background-color: #F8CECC;">Criteria</th>
+      <th style="background-color: #D5E8D4;">Category</th>
+      <th style="background-color: #D5E8D4;">Criteria</th>
+      <th style="background-color: #DAE8FC;">Category</th>
+      <th style="background-color: #DAE8FC;">Criteria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Read Count</td>
+      <td>≥ 10M(raw data) <br>≥ 5M(filtered data)  </td>
+      <td>PCR Duplication Rate</td>
+      <td> Remove PCR duplicate (Picard MarkDuplicates)</td>
+      <td>Overall Mapping Rate</td>
+      <td>≥ 80%</td>
+    </tr>
+    <tr>
+      <td>Per-base Q-score Distribution</td>
+      <td>≥ 30</td>
+      <td>Adapter Sequence  Rate</td>
+      <td>≤ 10%(Good)<br> ≤ 20%(Warning)</td>
+      <td>Uniquely Mapped Rate</td>
+      <td>≥ 60%</td>
+    </tr>
+      <tr>
+      <td>Per-base Composition</td>
+      <td>A,T:25~30%<br> G,C:20~25%</td>
+      <td>Low-Quality Base</td>
+      <td>Remove low-quality base (Q<30)</td>
+      <td>Multi-mapped Rate</td>
+      <td>≤ 20%</td>
+    </tr>
+    <tr>
+      <td>GC Content</td>
+      <td>40% ~ 60%</td>
+      <td>External Contamination Rate</td>
+      <td> Remove external mapped reads (e.g., Bacteria, Virus)</td>
+      <td>rRNA Rate</td>
+      <td>≤ 15%</td>
+    </tr>
+    <tr>
+      <td>Read Length Distribution</td>
+      <td>50 ~ 200bp</td>
+      <td>Spike-in Read Rate</td>
+      <td>≤ 5%</td>
+      <td>Intron-spanning Read Count</td>
+      <td> > 10k</td>
+    </tr>
+
+  </tbody>
+</table>
+
 
 ### 🔹 2. Read Trimming
 
