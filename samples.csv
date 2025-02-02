@@ -1,0 +1,7 @@
+batch,sample,fastq1,fastq2
+batch1,sample1,/path/sample1_R1.fastq.gz,/path/sample1_R2.fastq.gz
+batch1,sample2,/path/sample2_R1.fastq.gz,/path/sample2_R2.fastq.gz
+batch1,sample3,/path/sample3_R1.fastq.gz,/path/sample3_R2.fastq.gz
+batch2,sample4,/path/sample4_R1.fastq.gz,/path/sample4_R2.fastq.gz
+batch2,sample5,/path/sample5_R1.fastq.gz,/path/sample5_R2.fastq.gz
+batch2,sample6,/path/sample6_R1.fastq.gz,/path/sample6_R2.fastq.gz

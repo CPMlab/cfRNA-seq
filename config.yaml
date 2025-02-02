@@ -1,0 +1,9 @@
+workdir: "/home/ljb/cfRNA/results"
+trim_min_length: 15
+trim_quality: 30
+reference_genome: "/home/ljb/cfRNA/ref/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa"
+annotation_gtf: "/home/ljb/cfRNA/ref/Homo_sapiens.GRCh38.111.gtf"
+alignment_tool: "STAR"
+normalization_method: "TPM"  # Options: TPM, RPKM, DESeq2
+batch_correction_method: "Combat"  # Options: Combat, limma, etc.
+

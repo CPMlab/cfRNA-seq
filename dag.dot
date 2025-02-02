@@ -1,0 +1,74 @@
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+	0[label = "all", color = "0.00 0.6 0.85", style="rounded"];
+	1[label = "normalization", color = "0.15 0.6 0.85", style="rounded"];
+	2[label = "normalization", color = "0.15 0.6 0.85", style="rounded"];
+	3[label = "normalization", color = "0.15 0.6 0.85", style="rounded"];
+	4[label = "normalization", color = "0.15 0.6 0.85", style="rounded"];
+	5[label = "normalization", color = "0.15 0.6 0.85", style="rounded"];
+	6[label = "normalization", color = "0.15 0.6 0.85", style="rounded"];
+	7[label = "batch_correction", color = "0.37 0.6 0.85", style="rounded"];
+	8[label = "quantification", color = "0.07 0.6 0.85", style="rounded"];
+	9[label = "quantification", color = "0.07 0.6 0.85", style="rounded"];
+	10[label = "quantification", color = "0.07 0.6 0.85", style="rounded"];
+	11[label = "quantification", color = "0.07 0.6 0.85", style="rounded"];
+	12[label = "quantification", color = "0.07 0.6 0.85", style="rounded"];
+	13[label = "quantification", color = "0.07 0.6 0.85", style="rounded"];
+	14[label = "mark_duplicates", color = "0.59 0.6 0.85", style="rounded"];
+	15[label = "mark_duplicates", color = "0.59 0.6 0.85", style="rounded"];
+	16[label = "mark_duplicates", color = "0.59 0.6 0.85", style="rounded"];
+	17[label = "mark_duplicates", color = "0.59 0.6 0.85", style="rounded"];
+	18[label = "mark_duplicates", color = "0.59 0.6 0.85", style="rounded"];
+	19[label = "mark_duplicates", color = "0.59 0.6 0.85", style="rounded"];
+	20[label = "align", color = "0.52 0.6 0.85", style="rounded"];
+	21[label = "align", color = "0.52 0.6 0.85", style="rounded"];
+	22[label = "align", color = "0.52 0.6 0.85", style="rounded"];
+	23[label = "align", color = "0.52 0.6 0.85", style="rounded"];
+	24[label = "align", color = "0.52 0.6 0.85", style="rounded"];
+	25[label = "align", color = "0.52 0.6 0.85", style="rounded"];
+	26[label = "trim\nsample: sample1\nworkdir: results", color = "0.22 0.6 0.85", style="rounded"];
+	27[label = "trim\nsample: sample2\nworkdir: results", color = "0.22 0.6 0.85", style="rounded"];
+	28[label = "trim\nsample: sample3\nworkdir: results", color = "0.22 0.6 0.85", style="rounded"];
+	29[label = "trim\nsample: sample4\nworkdir: results", color = "0.22 0.6 0.85", style="rounded"];
+	30[label = "trim\nsample: sample5\nworkdir: results", color = "0.22 0.6 0.85", style="rounded"];
+	31[label = "trim\nsample: sample6\nworkdir: results", color = "0.22 0.6 0.85", style="rounded"];
+	1 -> 0
+	2 -> 0
+	3 -> 0
+	4 -> 0
+	5 -> 0
+	6 -> 0
+	7 -> 0
+	8 -> 1
+	9 -> 2
+	10 -> 3
+	11 -> 4
+	12 -> 5
+	13 -> 6
+	1 -> 7
+	2 -> 7
+	3 -> 7
+	4 -> 7
+	5 -> 7
+	6 -> 7
+	14 -> 8
+	15 -> 9
+	16 -> 10
+	17 -> 11
+	18 -> 12
+	19 -> 13
+	20 -> 14
+	21 -> 15
+	22 -> 16
+	23 -> 17
+	24 -> 18
+	25 -> 19
+	26 -> 20
+	27 -> 21
+	28 -> 22
+	29 -> 23
+	30 -> 24
+	31 -> 25
+}            
